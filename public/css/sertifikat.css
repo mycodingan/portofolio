@@ -1,0 +1,39 @@
+.certifica {
+    text-align: center;
+    margin: 5% auto;
+    width: 90%;
+}
+
+.jcerti {
+    font-size: 3em;
+    margin-bottom: 4%;
+    color: #93c2f4;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2%;
+    justify-items: center;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 4%;
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        grid-template-columns: 4fr;
+    }
+    .certifica{
+        margin-top: 120px;
+    }
+
+    .jcerti {
+        font-size: 3.5em;
+        color: #93c2f4;
+    }
+}

@@ -1,0 +1,117 @@
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+    background-color: #efeeee;
+} */
+
+nav {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  margin-top: 10px;
+  border-radius: 20px;
+  border: #dcdcdc ;
+  width: 98%;
+  margin-left: 14px;
+  z-index: 2;
+    /* filter: brightness(100%); */
+
+  /* box-shadow: inset; */
+}
+nav{
+    /* border: 1px solid; */
+    /* padding: 10px; */
+    box-shadow: 5px 7px #88888877;
+}
+nav .Logo{
+    font-family: 'Alfa Slab One', cursive;
+}
+nav .Logo2{
+    color: rgb(93, 144, 245);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  list-style: none;
+}
+
+nav div img {
+  width: 50px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Segoe UI", sans-serif;
+  color: #191919;
+  font-weight: 600;
+  padding: 8px 0;
+  transition: all;
+  transition-duration: 300ms;
+  border-bottom: 1px solid rgba(255, 68, 0, 0);
+}
+
+nav ul li a:hover {
+  color: rgb(72, 157, 206);
+  border-bottom: 1px solid rgb(72, 157, 206);
+}
+
+.menu-icon {
+  font-size: 28px;
+  display: none;
+}
+
+main {
+  padding-top: 7rem;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    position: fixed;
+    width: 98%;
+    top: 0;
+    margin-left: 10px;
+    background-color: #f6f5f5;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li:last-of-type {
+    padding-bottom: 8px;
+  }
+
+  nav ul.hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+    align-items: center;
+  }
+}
+/* yang bawah ini untuk content nya */
+/* nav {
+    position: fixed;
+    top: 0;
+    animation: fadeIn 0.5s;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  } */

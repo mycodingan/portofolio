@@ -1,0 +1,52 @@
+.skil{
+    text-align: center;
+    text-decoration: underline px;
+    color: rgb(168, 203, 249);
+    font-size: 50px;
+}
+.header {
+    background-color: rgb(231, 231, 231);
+    padding: 50px;
+    text-align: center;
+}
+
+.introduction {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #fff;
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    flex: 0 1 calc(25% - 20px);
+    margin-bottom: 70px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: 400;
+}
+.card i{
+    font-size: 40px;
+    color: #93c2f4;
+}
+.card .titlee{
+    color: #93c2f4;
+}
+
+@media screen and (max-width: 768px) {
+    .header{
+        margin-top: 190px;
+    }
+    .introduction {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        flex: 0 0 calc(100% - 20px);
+        margin-right: 0;
+    }
+}
+
